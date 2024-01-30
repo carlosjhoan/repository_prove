@@ -11,4 +11,11 @@
 
 - __git restore -- source [hash commit] [file]__: Vuelve al estado  del fichero en ese commit (hash)
 
+## GIT REVERT, GIT RESET, GIT CHECKOUT
+
+- GIT CHECKOUT: Ojo, es necesario volver rama cuando el commit se le aplica el checkout, esto se hace con *git checkout -b [nombre_cualquiera]*
+
+- GIT RESET: para revertir acciones locales. Cuando yo no le he hecho un push. Solo para deshacer commit de una rama privadan **git reset [hash-branch]** --> Borra todo lo que hay de ahí en adelante.
+
+- GIT REVERT: hace cambios en ramas públicas. Más seguro que RESET, porque no elimina el cokmiot de la historia. Crea uno nuevo que invierta el commit no deseado.
 
